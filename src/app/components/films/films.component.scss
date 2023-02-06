@@ -1,0 +1,34 @@
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 14px;
+    list-style: none;
+
+    li {
+        background: #141414;
+    }
+
+    li img{
+        width: 100%;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    li:hover img{
+        opacity: .5;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
